@@ -59,9 +59,7 @@ jobs:
           php-version: '8.0'
       - uses: actions/checkout@v3
       - name: List files
-        run: |
-          cd $GITHUB_WORKSPACE
-          ls
+        run: cat $GITHUB_WORKSPACE/README.md          
 
   prod:
     name: Deploy to Prod
