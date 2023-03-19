@@ -57,7 +57,9 @@ jobs:
 
     steps:
       - name: List files
-        run: ls
+        run: |
+          cd ${ GITHUB_WORKSPACE }
+          ls
 
   prod:
     name: Deploy to Prod
