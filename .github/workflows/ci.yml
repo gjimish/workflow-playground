@@ -60,7 +60,7 @@ jobs:
     steps:
       - name: List files
         run: |
-          cd ${{ github.workspace }}
+          cd $GITHUB_WORKSPACE
           ls
 
   prod:
